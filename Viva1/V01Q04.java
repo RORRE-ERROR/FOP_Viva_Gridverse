@@ -31,8 +31,8 @@ public class V01Q04 {
                 firstWhisper = sub;
             }
 
-            if (coreValue == null || sub.compareTo(coreValue) > 0) {
-                coreValue = sub;
+            if (lastEcho == null || sub.compareTo(lastEcho) > 0) {
+                lastEcho = sub;
             }
 
             int sum = 0;
@@ -42,7 +42,7 @@ public class V01Q04 {
 
             if (sum > maxAsciiSum) {
                 maxAsciiSum = sum;
-                lastEcho = sub;
+                coreValue = sub;
             }
 
         }
