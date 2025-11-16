@@ -5,13 +5,12 @@ public class V01Q04 {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Please provide the word: ");
 
         //all text changed to lowercase for easier comparison// 
 
         String text = scan.nextLine().toLowerCase();
 
-        System.out.println("Please provide the k substring: ");
+
         int k = scan.nextInt();
 
         /*why text.length() - k? this is because, if lets say word : morning
